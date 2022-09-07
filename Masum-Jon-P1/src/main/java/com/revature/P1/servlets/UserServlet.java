@@ -6,26 +6,31 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.revature.P1.services.userService;
+import com.revature.P1.dtos.requests.NewUserRequest;
+import com.revature.P1.services.UserService;
 
 import java.io.IOException;
 
 
 public class UserServlet extends HttpServlet {
 private final ObjectMapper mapper;
-private final userService userService;
+private final UserService userService;
 
 
 
-    public UserServlet(ObjectMapper mapper, com.revature.P1.services.userService userService) {
+    public UserServlet(ObjectMapper mapper, UserService userService) {
         this.mapper = mapper;
         this.userService = userService;
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        NewUserRequest request = mapper.readValue(req.getInputStream(), NewUserRequest.class);
+        resp.getWriter().write(mapper.writeValueAsString(request));
+
     }
+
+
 
 }
 

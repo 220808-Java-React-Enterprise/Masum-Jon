@@ -2,45 +2,41 @@ package com.revature.P1.dtos.requests;
 
 public class NewUserRequest {
     private String username;
-    private String password1;
-    private String password2;
+    private String password;
+
 
     public String getUsername() {
         return username;
     }
 
-    public NewUserRequest(String username, String password1, String password2) {
+    public NewUserRequest()
+    {}
+
+    public NewUserRequest(String username, String password) {
         this.username = username;
-        this.password1 = password1;
-        this.password2 = password2;
+        this.password = password;
+
     }
 
     public void setUsername(String username) {
         this.username = username;
     }
 
-    public String getPassword1() {
-        return password1;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassword1(String password1) {
-        this.password1 = password1;
+    public void setPassword1(String password) {
+        this.password = password;
     }
 
-    public String getPassword2() {
-        return password2;
-    }
-
-    public void setPassword2(String password2) {
-        this.password2 = password2;
-    }
 
     @Override
     public String toString() {
         return "NewUserRequest{" +
                 "username='" + username + '\'' +
-                ", password1='" + password1 + '\'' +
-                ", password2='" + password2 + '\'' +
+                ", password1='" + password + '\'' +
+                ", password2='" + password + '\'' +
                 '}';
     }
 }

@@ -1,17 +1,17 @@
 package com.revature.P1.daos;
 import java.util.List;
 
-import com.revature.P1.Util.utilities.ConnectionFactory;
-import com.revature.P1.models.user;
+import com.revature.P1.models.User;
+import com.revature.P1.utils.ConnectionFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class UserDaos implements crudDaos<user> {
+public class UserDaos implements CrudDaos<User> {
     String id;
-    public void save(user obj) {
+    public void save(User obj) {
         try (Connection con = ConnectionFactory.getInstance().getConnection()) {
             PreparedStatement ps = con.prepareStatement("INSERT INTO users (id, name, username, password, email) VALUES (?, ?, ?, ?, ?)");
             ps.setString(1, obj.getId());
@@ -26,17 +26,17 @@ public class UserDaos implements crudDaos<user> {
     }
 
     @Override
-    public void update(user obj) {
+    public void update(User obj) {
 
     }
 
     @Override
-    public void delete(user obj) {
+    public void delete(User obj) {
 
     }
 
     @Override
-    public user getById(String id) {
+    public User getById(String id) {
         return null;
     }
 
@@ -60,7 +60,7 @@ public class UserDaos implements crudDaos<user> {
         return null;
     }
 
-    public user getUserByUsernameAndPassword(String username, String password) {
+    public User getUserByUsernameAndPassword(String username, String password) {
         try (Connection con = ConnectionFactory.getInstance().getConnection()) {
             PreparedStatement ps = con.prepareStatement("SELECT * FROM users WHERE username = ? AND password = ?");
             ps.setString(1, username);
@@ -68,7 +68,7 @@ public class UserDaos implements crudDaos<user> {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next())
-                return new user(rs.getString("id"), rs.getString("username"), rs.getString("password"));
+                return new User(rs.getString("id"), rs.getString("username"), rs.getString("password"));
         } catch (SQLException e) {
             throw new RuntimeException("An error occurred when tyring to save to the database.");
         }
@@ -76,14 +76,14 @@ public class UserDaos implements crudDaos<user> {
         return null;
     }
 
-    public user getUserByid(String id) {
+    public User getUserByid(String id) {
         try (Connection con = ConnectionFactory.getInstance().getConnection()) {
             PreparedStatement ps = con.prepareStatement("SELECT * FROM users WHERE id = ?");
             ps.setString(1, id);
             ResultSet rs = ps.executeQuery();
 
             if (rs.next())
-                return new user(rs.getString("id"), rs.getString("username"), rs.getString("password"));
+                return new User(rs.getString("id"), rs.getString("username"), rs.getString("password"));
         } catch (SQLException e) {
             throw new RuntimeException("No idea exists, exiting program");
         }
@@ -108,7 +108,7 @@ public class UserDaos implements crudDaos<user> {
 
     }
 
-    public user getidbyusername(String username) {
+    public User getidbyusername(String username) {
         try (Connection con = ConnectionFactory.getInstance().getConnection()) {
             PreparedStatement ps = con.prepareStatement("SELECT * FROM users WHERE username = ?");
 
@@ -116,7 +116,7 @@ public class UserDaos implements crudDaos<user> {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next())
-                return new user(rs.getString("id"), rs.getString("username"), rs.getString("password"));
+                return new User(rs.getString("id"), rs.getString("username"), rs.getString("password"));
         } catch (SQLException e) {
             throw new RuntimeException("No idea exists, exiting program");
         }
