@@ -16,26 +16,36 @@ This webapp attempts to offer highly afforable and very reliable service that al
 Currently  reimbursements for food, travel, lodging are allowed.
 Roles defined to Admin, User and Financial Manager.
 
-##Tecnologies
+## Tecnologies
 Java 8- Used for creation and logic flow of servlets.
+<br/>
 <br/>
 IntelliJ- Compliler for Java programs.
 <br/>
+<br/>
 Postman- Used for tracking gets, posts and interacting with the database from a backend level.
+<br/>
 <br/>
 Apache Maven- Used to handle dependencies between diffrent tecnologies allowing them to send data to one another.
 <br/>
+<br/>
 JDBC-Java Data Base Connection, used to connect java program to database.
+<br/>
 <br/>
 Postgres SQL- Language used to interact with database.
 <br/>
+<br/>
 Jackson- Dependencies for low-level incremental parsing and management of data via JDP (Jackson Data Processor.)
+<br/>
 <br/>
 Java EE Servlets- Used as stopgap communicators for tomcat.
 <br/>
+<br/>
 JSON Web Tokens- Used to authenticate logins for users.
 <br/>
+<br/>
 JUnit- Testing dynamic to result in high code coverage.
+<br/>
 <br/>
 Mockito- Mocking of database object entries to increase code coverage via spy(s) and mock(s).
 <br/>
