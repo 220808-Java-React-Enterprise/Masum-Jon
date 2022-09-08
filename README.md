@@ -17,17 +17,17 @@ Currently  reimbursements for food, travel, lodging are allowed.
 Roles defined to Admin, User and Financial Manager.
 
 ##Tecnologies
--Java 8- Used for creation and logic flow of servlets.
--IntelliJ- Compliler for Java programs.
--Postman- Used for tracking gets, posts and interacting with the database from a backend level.
--Apache Maven- Used to handle dependencies between diffrent tecnologies allowing them to send data to one another.
--JDBC-Java Data Base Connection, used to connect java program to database.
--Postgres SQL- Language used to interact with database.
--Jackson- Dependencies for low-level incremental parsing and management of data via JDP (Jackson Data Processor.)
--Java EE Servlets- Used as stopgap communicators for tomcat.
--JSON Web Tokens- Used to authenticate logins for users.
--JUnit- Testing dynamic to result in high code coverage.
--Mockito- Mocking of database object entries to increase code coverage via spy(s) and mock(s).
++Java 8- Used for creation and logic flow of servlets.
++IntelliJ- Compliler for Java programs.
++Postman- Used for tracking gets, posts and interacting with the database from a backend level.
++Apache Maven- Used to handle dependencies between diffrent tecnologies allowing them to send data to one another.
++JDBC-Java Data Base Connection, used to connect java program to database.
++Postgres SQL- Language used to interact with database.
++Jackson- Dependencies for low-level incremental parsing and management of data via JDP (Jackson Data Processor.)
++Java EE Servlets- Used as stopgap communicators for tomcat.
++JSON Web Tokens- Used to authenticate logins for users.
++JUnit- Testing dynamic to result in high code coverage.
++Mockito- Mocking of database object entries to increase code coverage via spy(s) and mock(s).
 
 ## Features
 Users may login, send new reimbursement requests and see the status of thier reimbursements and 
