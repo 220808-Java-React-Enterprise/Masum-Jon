@@ -4,7 +4,7 @@ public class LoginRequests {
     private String username;
     private String password;
     public LoginRequests(){}
-    public void loginRequestl(String username, String password){
+    public void loginRequests(String username, String password){
         this.password=password;
         this.username=username;
     }

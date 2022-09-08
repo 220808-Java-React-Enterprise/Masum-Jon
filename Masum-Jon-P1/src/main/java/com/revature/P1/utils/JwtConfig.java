@@ -1,9 +1,9 @@
 package com.revature.P1.utils;
-/*
+
 import io.jsonwebtoken.SignatureAlgorithm;
 
 import javax.crypto.spec.SecretKeySpec;
-import javax.xml.bind.DatatypeConverter;
+import jakarta.xml.bind.DatatypeConverter;
 import java.security.Key;
 
 public class JwtConfig {
@@ -33,4 +33,4 @@ public class JwtConfig {
     }
 }
 
-*/
+

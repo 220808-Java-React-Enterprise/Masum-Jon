@@ -12,10 +12,6 @@ public class Principal {
         this.role = role;
     }
 
-    public Principal(String username, String user_id) {
-        this.username = username;
-        this.user_id = user_id;
-    }
 
     public String getUsername() {
         return username;
