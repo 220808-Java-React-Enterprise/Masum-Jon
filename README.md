@@ -44,11 +44,9 @@ Java EE Servlets- Used as stopgap communicators for tomcat.
 JSON Web Tokens- Used to authenticate logins for users.
 <br/>
 <br/>
-JUnit- Testing dynamic to result in high code coverage.
-<br/>
-<br/>
-Mockito- Mocking of database object entries to increase code coverage via spy(s) and mock(s).
-<br/>
+
+![image](https://user-images.githubusercontent.com/102322868/189154212-d808e186-4341-4f95-ac6d-bebd0e016db2.png)
+![image](https://user-images.githubusercontent.com/102322868/189154253-b3217b67-90f3-417c-ac5d-436dab4a16c7.png)
 
 ## Features
 Users may login, send new reimbursement requests and see the status of thier reimbursements and 
