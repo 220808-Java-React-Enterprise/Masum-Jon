@@ -18,26 +18,38 @@ Roles defined to Admin, User and Financial Manager.
 
 ##Tecnologies
 Java 8- Used for creation and logic flow of servlets.
+<br />
 IntelliJ- Compliler for Java programs.
+<br />
 Postman- Used for tracking gets, posts and interacting with the database from a backend level.
+<br />
 Apache Maven- Used to handle dependencies between diffrent tecnologies allowing them to send data to one another.
+<br />
 JDBC-Java Data Base Connection, used to connect java program to database.
+<br />
 Postgres SQL- Language used to interact with database.
+<br />
 Jackson- Dependencies for low-level incremental parsing and management of data via JDP (Jackson Data Processor.)
+<br />
 Java EE Servlets- Used as stopgap communicators for tomcat.
+<br />
 JSON Web Tokens- Used to authenticate logins for users.
+<br />
 JUnit- Testing dynamic to result in high code coverage.
+<br />
 Mockito- Mocking of database object entries to increase code coverage via spy(s) and mock(s).
+<br />
 
 ## Features
-Users may login, send new reimbursement requests and see the status of thier reimbursements and 
+Users may login, send new reimbursement requests and see the status of thier reimbursements and decisions.
+<br />
    
 
 Admin may create user, ban user and change user details.
-   
+   <br />
    
 Financial Manager may approve/deny reimbursements, see details and numerage of reimbursements thorugh filters.
-
+<br />
 
 
 ### More Features to implement:
